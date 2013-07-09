@@ -6,7 +6,7 @@ var fs = require('fs');
 
 app.get('/', function(request, response) {
   var content = fs.readFileSync("index.html");
-  response.send(content);
+  response.send(content.toString());
 });
 
 
